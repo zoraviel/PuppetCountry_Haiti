@@ -11,14 +11,14 @@
     <body>
         <progress max="100" value="0"></progress>
       <nav>
-
-    <a href=".panel red">Dessalines</a>
-    <a href="#boyer">Boyer</a>
-    <a href="#geffrard">Geffrard</a>
-    <a href="#alexis">Alexis</a>
-    <a href="#duvalier">Duvalier</a>
-    <a href="#Moïse">Moïse</a>
-
+        <ul>
+  <li>  <a href="#jean">Dessalines</a></li>
+  <li>  <a href="#boyer">Boyer</a></li>
+  <li>  <a href="#alexis">Alexis</a></li>
+    <li>  <a href="#occu">Occupation</a></li>
+  <li>  <a href="#duvalier">Duvalier</a><li>
+  <li>  <a href="#Moïse">Moïse</a></li>
+</ul>
     </nav>
 
       <section class="first panel blue" id="header">
@@ -26,40 +26,123 @@
     <div class="scroll-down">Scroll up or down<div class="arrow"></div></div>
   </section>
   <section class="panel intro">
-    <h2> A look inside Haiti's history with foriegn powers through its presidents.</h2>
+    <h2> A Look Inside Haiti's History with Foreign Powers Through its Presidents.</h2>
     <p class="description"> Haiti is known as being the first slave nation to gain its independence from its captors. However, its sovereignty is still questionable. It is considered the poorest country within the Western Hemisphere and continues to receive aid in the form of donations, military and political advisement. The country shows little sign of economic growth, despite the constant presence of foreign power. From the very start, Haiti has been dealing with "superpower" countries with little gain.</p>
   </section>
   <section id="jean" class="panel blue">
     <h2> 1804–1806 Jean-Jacques-Dessalines </h2>
     <img id="jeanpic" class="portrait"src="styles/images/jeanportrait.png" alt="Painting of Jean-Jacques-Dessaline.">
-            <p class="description" id="jeandes"> He's considered to be the first president of Haiti, and one of the leaders of its first revolution. He killed many of the eurpean settlers who were in Haiti, but allowed some Polish settlers who defected from the French to remain alive.</p>
+    <div><button onclick="myFunction1()">Click Me</button></div>
+            <p class="description" id="jeandes">He's considered to be the first president of Haiti and one of the leaders of its first revolution.</p>
+          </section>
+  </section>
+  <section id="deaths" class="panel maroon">
+    <h2> Click the Flag to Know More About the Killings.</h2>
+      <img id="haitiflagpic" onclick="flagreveal()" src="styles/images/Haitiflag.svg.png">
+      <p id="haitiflag" class="description">Click flag to reveal.</p>
   </section>
   <section class="panel red">
     <h2>1818-1843 Jean-Pierre Boyer</h2>
-      <img id="boyer" class="portrait"src="styles/images/boyerportrait .png" alt="Painting of Jean-Jacques-Dessalines.">
-            <p class="description" id="boyerdes"> eeeeeeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeee eeeeeeeeee eeeeeeeeee eeeeeeeee eeeeeeee eeeeeeee eeeeeeeeee eeeeeeeeeee eeeeeee eeeeeee eeeeee eeeeeeee eeeeeee.</p>
-  </section>
-  <section class="panel orange">
-    <h2>1859–1867 Fabre Geffrard</h2>
-      <img id="geffrard" class="portrait"src="styles/images/geffrardportrait .png" alt="Painting of Jean-Jacques-Dessalines.">
-      <p class="description" id="geffdes">eeeeeeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeee eeeeeeeeee eeeeeeeeee eeeeeeeee eeeeeeee eeeeeeee eeeeeeeeee eeeeeeeeeee eeeeeee eeeeeee eeeeee eeeeeeee eeeeeee.</p>
-  </section>
-  <section class="panel purple">
-    <h2>1902–1908 Pierre Nord Alexis</h2>
-      <img id="alexis" class="portrait"src="styles/images/alexisportrait .png" alt="Painting of Jean-Jacques-Dessalines.">
-      <p class="description" id="alexisdes">eeeeeeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeee eeeeeeeeee eeeeeeeeee eeeeeeeee eeeeeeee eeeeeeee eeeeeeeeee eeeeeeeeeee eeeeeee eeeeeee eeeeee eeeeeeee eeeeeee.</p>
-  </section>
-  <section class="panel green">
-    <h1>1971–1986 Jean-Claude Duvalier</h1>
-    <img id="duvalier" class="portrait"src="styles/images/duvalierportrait .png" alt="Painting of Jean-Jacques-Dessalines.">
-        <p class="description" id="duvdes">eeeeeeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeee eeeeeeeeee eeeeeeeeee eeeeeeeee eeeeeeee eeeeeeee eeeeeeeeee eeeeeeeeeee eeeeeee eeeeeee eeeeee eeeeeeee eeeeeee.</p>
-  </section>
-  <section class="panel teal">
-    <h1>2017–present Jovenel Moïse</h1>
-    <img id="Moïse" class="portrait"src="styles/images/Moïseportrait .png" alt="Painting of Jean-Jacques-Dessalines.">
-        <p class="description" id="moisedes">eeeeeeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeee eeeeeeeeee eeeeeeeeee eeeeeeeee eeeeeeee eeeeeeee eeeeeeeeee eeeeeeeeeee eeeeeee eeeeeee eeeeee eeeeeeee eeeeeee.</p>
+      <img id="boyer" class="portrait"src="styles/images/boyerportrait .png" alt="Painting of Jean-Pierre Boyer.">
+          <div><button onclick="myFunction2()">Click Me</button></div>
+            <p class="description" id="boyerdes">Boyer is also considered a hero for his fighting within the first revolution. He's considerably more of a tolerant leader than Dessalines and ran the country for nearly two decades.</p>
   </section>
 
+<section class="panel pink">
+  <h2> Click or Hover Over the Number to See the Total.</h2>
+  <div class="border">
+  <h2> Amount of Money Haiti Paid Back to France:</h2>
+  <div id="bigmoney"></div>
+  <h2> BILLION DOLLARS.</h2>
+</div>
+<p> <em>-according to <a href="https://www.forbes.com/sites/realspin/2017/12/06/in-1825-haiti-gained-independence-from-france-for-21-billion-its-time-for-france-to-pay-it-back/?sh=4af679c312b3">Forbes</a></em> </p>
+</section>
+
+<section class="panel purple">
+  <h2>1902–1908 Pierre Nord Alexis</h2>
+    <img id="alexis" class="portrait"src="styles/images/alexisportrait .png" alt="Photo of Nord Alexis.">
+      <div><button onclick="myFunction4()">Click Me</button></div>
+    <p class="description" id="alexisdes">Nord Alexis was a powerful member of the military before he became president, and was also accused of being a tool for the U.S. and Europe. The Haitian government passed legislation against Syrian immigrants during this time, preventing them from participating in the market economy.</p>
+</section>
+
+  <section id="occu" class="panel orange">
+    <h2>1915–1934 Occupied Haiti</h2>
+      <img class="portrait"src="styles/images/haitiflagcircle.png" alt="Circle image of Haitian Flag.">  <img  class="portrait"src="styles/images/usflagcircle.png" alt="Circle image of U.S. Flag.">
+        <div><button onclick="myFunction3()">Click Me</button></div>
+      <p class="description" id="occdes"> U.S. Marines landed on Haitian soil on July 28, 1915, and that marked the start of nearly two decades under U.S. control. Pierre Sully, a Haitian soldier guarding the country's military arsenal, famously told the U.S. Marines that they would only entire over his dead body, and that's exactly what they did.
+      </section>
+
+<section class="panel bloodorange">
+  <h2> Images of the <a href="https://en.wikipedia.org/wiki/United_States_occupation_of_Haiti">U.S Occupation</a> in Haiti.</h2>
+      <div class="horizSlider">
+<div class="slide">
+<p class="slideText">U.S. Marines patrolling the jungle with Haitian guide.</p>
+<img width="1000" height="500" class="slideImage" src="styles/images/occpic1.jpg" alt="Filler image">
+</div>
+
+<div class="slide">
+<p class="slideText"> U.S. Marines at the entrance of Cap-Haitien.</p>
+<img width="1000" height="500" class="slideImage" src="styles/images/occpic2.jpg" alt="Filler image">
+</div>
+
+<div class="slide">
+<p class="slideText">A marine base located at Cap-Haitien.</p>
+<img width="1000" height="500" class="slideImage" src="styles/images/occpic3.jpg" alt="Filler image">
+</div>
+
+<div class="slide">
+<h2 class="slideText">Dead Haitian revolutionaries killed by the U.S. Marines.</h2>
+<img width="1000" height="500" class="slideImage" src="styles/images/occpic4.jpg" alt="Filler image">
+</div>
+
+
+</div>
+</section>
+
+  <section class="panel green">
+    <h2>1971–1986 Jean-Claude Duvalier</h2>
+    <img id="duvalier" class="portrait"src="styles/images/duvalierportrait .png" alt="Photo of Jean-Claude Duvalier.">
+      <div><button onclick="myFunction5()">Click Me</button></div>
+        <p class="description" id="duvdes">It would be more fitting to call Duvalier's presidency a dictatorship as he simply continued his father's legacy under the name Baby Doc. He was a lavish president and neglected his tole by giving most of his responsibilities to his advisors.</p>
+  </section>
+  <section class="panel teal">
+    <h2>2017–present Jovenel Moïse</h2>
+    <img id="Moïse" class="portrait"src="styles/images/Moïseportrait .png" alt="Photo of Jovenel Moïse.">
+      <div><button onclick="myFunction6()">Click Me</button></div>
+        <p class="description" id="moisedes"> Less text is written about Moise, but the current state of affairs is enough to illustrate how he's been influenced by foreign powers. Currently, there is a major state of unrest within Haiti over several kidnappings happening within the country. Many protests are occurring urging him to resign because of his lack of action against the crimes.</p>
+  </section>
+
+  <section class="panel aquamarine">
+    <h2>Additonal Information</h2>
+        <p class="description"> Haiti has been given a significant amount of foreign aid over the past few years. The U.S. alone has given Haiti millions of dollars in foreign aid, yet the country's economy still suffers greatly. Although there are some good presidents, Haiti has consistently been led by questionable leadership that doesn't seem to have the prosperity of the country in mind.</p>
+  </section>
+
+  <section class="panel jssources" id="source1">
+    <h2>Source links</h2>
+        <p class="description"> <a href="https://greensock.com/st-demos/">ScrollTrigger</a></p>
+
+        <p class="description"> <a href="https://css-tricks.com/animating-number-counters/">Counter</a></p>
+
+        <p class="description"> <a href="https://www.oodlestechnologies.com/blogs/create-a-spinner-with-css/">Rotation</a></p>
+
+        <p class="description"> <a href="https://www.w3schools.com/howto/howto_js_toggle_text.asp">Swap Text</a></p>
+
+        <p class="description"> <a href="https://www.dukeupress.edu/the-haiti-reader">The Haiti Reader</a></p>
+
+        <p class="description"> <a href="https://commons.wikimedia.org/wiki/File:Jean-Jacques-Dessalines.jpg">Dessalines Image</a></p>
+  </section>
+
+  <section class="panel infosources" id="source2">
+    <h2>Source links continued</h2>
+        <p class="description"> <a href="https://commons.wikimedia.org/wiki/File:President_Jean-Pierre_Boyer_of_Haiti_(Hispaniola_Unification_Regime)_Portrait.jpg">Boyer Image</a></p>
+        <p class="description"> <a href="https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg">US Flag</a></p>
+        <p class="description"><a href="https://commons.wikimedia.org/wiki/File:Jean-Jacques-Dessalines.jpg">Haiti Flag</a></p>
+        <p class="description"><a href="https://commons.wikimedia.org/wiki/File:Baby_Doc_(centr%C3%A9e).jpg">Marcello Casal Jr/ABr</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</p>
+        <p class="description"> <a href="https://commons.wikimedia.org/wiki/File:Jovenel_Moise.jpg">Moise Image</p>
+        <p class="description"><a href="https://commons.wikimedia.org/wiki/File:Picture_of_Pierre_Nord_Alexis.jpg"> Alexis Image</a></p>
+
+
+  </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>

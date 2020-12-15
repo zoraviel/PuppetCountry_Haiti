@@ -1,28 +1,31 @@
 html, body {
   height: 100%;
   max-width: 100%;
-    justify-content: center;
 }
 body {
+  font-family: 'Glegoo', 'Palatino', 'Times New Roman', serif;
   font-size: 18px;
   font-weight: 300;
   max-width: 100%;
   background-color: black;
-  height: 1000px;
   justify-content: center;
 }
 .panel {
   position: fixed;
-  width: 100%;
   height: auto;
-  text-align: center;
   color: white;
-  display: inline-block;
+  margin: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+justify-content: center;
+width: 100%;
+text-align: center;
+color: white;
+display: inline-block;
 }
 
-.arrow{
-  color: white;
-}
+
 section:not(.first) {
   opacity: 0;
   visibility: hidden;
@@ -31,14 +34,19 @@ section:not(.first) {
 
 
 .description{
-  margin: 3rem;
+  margin: 10rem;
   padding: 2rem;
   max-width: 100%;
   outline: 1px solid;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  max-height: 100%;
 }
 
 h2{
-  margin: 2rem;
+  font-family: 'Orbitron', 'Verdana', sans-serif;
+  margin: 1rem;
 }
 nav {
   position: sticky;
@@ -52,16 +60,19 @@ nav {
 }
 
 #header{
+  font-family: 'Orbitron', 'Verdana', sans-serif;
 position: absolute;
-padding-bottom: 1rem;
+margin: 0;
 }
 img{
   max-width: 100%;
+  max-height: 100%
 }
+
 nav a {
   color: black;
-  font-size: 1.3em;
-  line-height: 1.7;
+  font-size: 1em;
+  line-height: 0.5rem;
   text-decoration: none;
   margin: 1rem;
   padding-right: 1rem;
@@ -95,11 +106,27 @@ progress::-moz-progress-bar {
   background-attachment: fixed;
 }
 
+button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+ul
+{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+    display: inline;
+}
 
+li{
+  display: inline;
+}
 .portrait {
- box-sizing: content-box;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 
   -webkit-animation: spin 2000ms linear infinite, moveLeftToRight 5s linear infinite;
@@ -113,6 +140,8 @@ progress::-moz-progress-bar {
   left: 0;
   max-width: 100%;
 }
+
+
 /* Spinning the sphere using key frames */
 @-ms-keyframes spin {
   from { -ms-transform: rotate(0deg); }
@@ -131,6 +160,62 @@ progress::-moz-progress-bar {
   to { -webkit-transform: rotate(360deg); }
 }
 
+
+
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+#bigmoney {
+  transition: --num 6s;
+  counter-set: num var(--num);
+  font: 800 40px system-ui;
+}
+#bigmoney::after {
+  content: counter(num);
+}
+#bigmoney:hover {
+  --num: 21;
+  color: RED;
+}
+
+.border{
+  outline: 1px solid white;
+  margin: 10rem;
+}
+
+.horizSlider {
+  position: relative;
+  white-space: nowrap;
+  overflow: auto;
+}
+.horizSlider .slide {
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+}
+.slideText {
+  position: relative;
+  left: 50%;
+text-align: center;
+  color: black;
+  background-color: white;
+  z-index: 1;
+  font-size: 1em;
+  padding: .2rem;
+}
+.slideImage {
+  height: 400px;
+  transform-origin: bottom left;
+  max-width: 100%;
+  filter: grayscale(100%);
+}
+
+
 @media screen and (max-width: 700px) {
   body {
     margin: 1rem;
@@ -140,7 +225,13 @@ progress::-moz-progress-bar {
     height: 150px;
     width: 150px;
   }
+
+  #header{
+    margin: 1rem;
+  }
+
 }
+
 
 
 @media screen and (max-width: 400px) {
@@ -152,4 +243,29 @@ progress::-moz-progress-bar {
     height: 100px;
     width: 100px;
   }
+  .panel{
+  width: 82%;
+
+  }
+
+  .description{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 18px;
+  }
+
+  .border{
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+h2{
+margin: 0;
+font-size: 25px;
+}
+
+#header{
+  margin: 1rem;
+}
+
 }
